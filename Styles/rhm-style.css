@@ -51,10 +51,9 @@ h1, h2, p {
 }
 .menu-bar ul li {
   width: rgb(255, 0, 0);
-  margin-top: 25px ;
-  margin-bottom: 25px;
+  margin-top: 10px ;
+  margin-bottom: 10px;
   padding: 10px 30px;
-  font-family: mont;
   font-weight: lighter;
   letter-spacing: 0.1cm;
   font-variant: normal;
