@@ -1,0 +1,208 @@
+.Prayer-bg body{
+  background-color: #f8d49b;
+  background-image: url(https://images.pexels.com/photos/2079704/pexels-photo-2079704.jpeg?cs=srgb&dl=brown-tower-2079704.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Qibla-bg body{
+  background-color: #f8d49b;
+  background-image: url(https://images.pexels.com/photos/2830460/pexels-photo-2830460.jpeg?cs=srgb&dl=dome-buildings-during-golden-hour-2830460.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.PrayerTimes-bg body{
+  background-color: #f8d49b;
+  background-image: url(https://images.pexels.com/photos/1428607/pexels-photo-1428607.jpeg?cs=srgb&dl=silhouette-of-two-people-near-sea-in-distant-of-ortakoy-1428607.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.Mosque-bg body{
+  background-color: #f8d49b;
+  background-image: url(https://images.pexels.com/photos/2404046/pexels-photo-2404046.jpeg?cs=srgb&dl=architectural-photography-of-hassan-ii-mosque-2404046.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  color: black;
+  font-family: Times New Roman;
+  text-align: center;
+  font-size: 80px;
+  }
+
+h2 {
+  color: black;
+  font-family: Times New Roman;
+  text-align: center;
+  font-size: 50px;
+}
+
+p {
+  font-size: 30px;
+  color: black;
+  font-family: Times New Roman;
+}
+
+.Prayer-bg .menu-bar {
+  background: rgba(204, 197, 190, 0.5);
+  text-align: center;
+}
+
+.Qibla-bg .menu-bar {
+  background: rgba(156, 202, 254, 0.5);
+  text-align: center;
+}
+
+.PrayerTimes-bg .menu-bar {
+  background: rgba(99, 54, 5, 0.5);
+  text-align: center;
+}
+
+.Mosque-bg .menu-bar {
+  background: rgba(77, 119, 139, 0.5);
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li{
+  width: rgb(250, 0, 0);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px 30px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.active, .menu-bar ul li:hover {
+  background: rgba(121, 96, 70, 0.3);
+  border-radius: 3px;
+}
+
+.Item {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  flex-grow: 1 1 1;
+}
+
+.Item > div {
+  font-size: 20px;
+  color: #e6e1db;
+  background-color: #74675d;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#Qibla, #Mosque, #Times {
+  width: 30%;
+  text-align: center;
+}
+
+.Icons {
+  display: flex;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: space-between;
+  flex-grow: 1 1 1;
+  height: 500px;
+  border: none;
+}
+
+.Icons > nav {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#QiblaIcon {
+  position: relative;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  background: #e6e1db;
+  border-radius: 5px;
+}
+
+#QiblaIcon .fas {
+  position: absolute;
+  top: 90px;
+  left: 160px;
+  font-size: 80px;
+  cursor: pointer;
+  color: #017090;
+}
+
+#QiblaIcon .fas:hover{
+  color: #ab886a;
+}
+
+#TimeIcon {
+  position: relative;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  background: #e6e1db;
+  border-radius: 5px;
+}
+
+#TimeIcon .far {
+  position: absolute;
+  top: 90px;
+  left: 170px;
+  font-size: 80px;
+  cursor: pointer;
+  color: #017090;
+}
+
+#TimeIcon .far:hover {
+  color: #ab886a;
+}
+
+#MosqueIcon {
+  position: relative;
+  width: 30%;
+  height: 50%;
+  text-align: center;
+  background: #e6e1db;
+  border-radius: 5px;
+}
+
+#MosqueIcon .fas {
+  position: absolute;
+  top: 90px;
+  left: 160px;
+  font-size: 80px;
+  cursor: pointer;
+  color: #017090;
+}
+
+#MosqueIcon .fas:hover {
+  color: #ab886a;
+}
+
+#MosqueMap, #QiblaMap {
+  margin: auto;
+  width: 1300px;
+  height: 400px;
+  }
+
+#iframe1 {
+  width: 1300px;
+  height: 114px;
+  border: 1px solid #ddd;
+}
