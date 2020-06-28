@@ -23,10 +23,13 @@
   color: black;
 }
 
-.searchbutton {
-  padding: 14px 16px;
+nav {
   overflow: hidden;
   background-color: rgb(47, 79, 79, 0.9);
+}
+
+.searchbutton {
+  padding: 14px 16px;
 }
 
 h1, h2, p {
