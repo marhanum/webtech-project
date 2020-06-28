@@ -36,20 +36,17 @@ h1, h2, p {
   padding-bottom: 10px;
 }
 
-.menu-bar
-{
+.menu-bar {
   background : rgba(0, 0, 0, 0.8);
   text-align: center;
   z-index: -1;
 }
-.menu-bar ul
-{
+.menu-bar ul {
     display: inline-flex;
   list-style: none;
   color: #fff;
 }
-.menu-bar ul li
-{
+.menu-bar ul li {
   width: rgb(255, 0, 0);
   margin-top: 25px ;
   margin-bottom: 25px;
@@ -59,13 +56,13 @@ h1, h2, p {
   letter-spacing: 0.1cm;
   font-variant: normal;
 }
-.menu-bar ul li a
-{
+
+.menu-bar ul li a {
  text-decoration: none;
  color: white;
 }
-.active , .menu-bar ul li:hover
-{
+
+.active , .menu-bar ul li:hover {
   background: rgba(121, 96, 70, 0.3);
   border-radius: 3px;
 }
