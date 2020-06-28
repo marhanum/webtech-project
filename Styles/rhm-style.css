@@ -11,7 +11,7 @@
 }
 
 .column a {
-  color: rgb(255, 250, 205, 0.9);
+  color: rgb(255, 250, 205);
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ nav {
 nav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: rgb(255, 250, 205);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -56,7 +56,7 @@ nav a:hover {
 
 h1 {
   background-color: rgb(47, 79, 79, 0.9);
-  color: rgb(255, 250, 205, 0.9);
+  color: rgb(255, 250, 205);
 }
 
 #thumbnail {
