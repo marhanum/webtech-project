@@ -6,10 +6,10 @@
 }
 @font-face {
 font-family: "mont";
-src: url("Montserrat/Montserrat-Thin.ttf");
+src: url("fonts/Montserrat/Montserrat-Thin.ttf");
 }
 body{
-  background-image: url(images/images/Prayer.jpg) ;
+  background-image: url(images/images/dhikr.jpg) ;
   background-size: cover;
 }
 .menu-bar
@@ -44,4 +44,22 @@ body{
 {
   background: rgba(121, 96, 70, 0.3);
   border-radius: 3px;
+}
+
+.dua{
+  color: white;
+  background : rgba(0, 0, 0, 0.8);
+  font-family: mont;
+  font-weight: lighter;
+  padding: 20px;
+  margin: auto;
+}
+.dua p{
+    font-size: 25px;
+}
+
+.dua h2{
+  padding-top: 30px;
+  font-family: mont;
+  font-weight: lighter;
 }
