@@ -9,7 +9,7 @@ font-family: "mont";
 src: url("fonts/Montserrat/Montserrat-Thin.ttf");
 }
 body{
-  background-image: url(images/mountains.jpg) ;
+  background-image: url(images/images/mountains.jpg) ;
   background-size: cover;
 }
 .menu-bar
