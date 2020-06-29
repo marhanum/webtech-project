@@ -30,21 +30,16 @@
   background-size: cover;
 }
 
-@font-face {
-font-family: "mont";
-src: url("Montserrat/Montserrat-Thin.ttf");
-}
-
 h1 {
-  color: black;
-  font-family: mont;
+  color: #303534;
+  font-family: Impact;
   text-align: center;
   font-size: 80px;
   }
 
 h2 {
-  color: black;
-  font-family: Garamond;
+  color: #303534;
+  font-family: Impact;
   text-align: center;
   font-size: 50px;
 }
