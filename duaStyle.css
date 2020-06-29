@@ -1,0 +1,47 @@
+*
+{
+  padding: 100;
+  margin: 0;
+  box-sizing: inherit;
+}
+@font-face {
+font-family: "mont";
+src: url("fonts/Montserrat/Montserrat-Thin.ttf");
+}
+body{
+  background-image: url(images/Prayer.jpg) ;
+  background-size: cover;
+}
+.menu-bar
+{
+  background : rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: -1;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: rgb(255, 0, 0);
+  margin-top: 25px ;
+  margin-bottom: 25px;
+  padding: 10px 30px;
+  font-family: mont;
+  font-weight: lighter;
+  letter-spacing: 0.1cm;
+  font-variant: normal;
+}
+.menu-bar ul li a
+{
+ text-decoration: none;
+ color: white;
+}
+.active , .menu-bar ul li:hover
+{
+  background: rgba(121, 96, 70, 0.3);
+  border-radius: 3px;
+}
