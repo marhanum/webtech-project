@@ -3,15 +3,26 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mosque</title>
-    <link rel="stylesheet" href="Styles/Prayer.css">
+    <link rel="stylesheet" href="Style/Prayer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
    crossorigin=""/>
    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
+   <script src="https://unpkg.com/esri-leaflet@2.4.1/dist/esri-leaflet.js"
+    integrity="sha512-xY2smLIHKirD03vHKDJ2u4pqeHA7OQZZ27EjtqmuhDguxiUvdsOuXMwkg16PQrm9cgTmXtoxA6kwr8KBy3cdcw=="
+    crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.css"
+    integrity="sha512-IM3Hs+feyi40yZhDH6kV8vQMg4Fh20s9OzInIIAc4nx7aMYMfo+IenRUekoYsHZqGkREUgx0VvlEsgm7nCDW9g=="
+    crossorigin="">
+<script src="https://unpkg.com/esri-leaflet-geocoder@2.3.3/dist/esri-leaflet-geocoder.js"
+    integrity="sha512-HrFUyCEtIpxZloTgEKKMq4RFYhxjJkCiF5sDxuAokklOeZ68U2NPfh4MFtyIVWlsKtVbK5GD2/JzFyAfvT5ejA=="
+    crossorigin=""></script>
   </head>
-  
+
   <body>
     <html class="Mosque-bg">
 
@@ -30,7 +41,74 @@
 
     <h2>Mosque</h2>
 
+    <p id="showTime"></p>
+
     <div id="MosqueMap"></div>
+
+    <br>
+    <br>
+
+    <!-- footer -->
+  <div class="footer">
+    <div class="footer-content container">
+
+      <div class="footer-section about about_section">
+        <h1>About Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae, reiciendis dolores, a fugit facilis
+          saepe voluptatem repudiandae nobis error tenetur molestias itaque cupiditate quaerat quibusdam quia, molestiae
+          iste quos.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="footer-section links about_section">
+        <h1>Quick Links</h1>
+        <ul>
+          <li><a href="About us.html">About Us</a></li>
+          <li><a href="travel dua.html">Travel Dua</a></li>
+          <li><a href="islamic-attraction.html">Islamic Attraction</a></li>
+          <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accommodation</a></li>
+          <li><a href="halal-restaurant.html">Halal Restaurant</a></li>
+          <li><a href="Prayer.html">24/7 Prayer</a></li>
+          <li><a href="contact us">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact-form about_section">
+        <h1>Enquiry</h1>
+        <div>
+
+
+            <!-- <label for="fname">Name</label> -->
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" name="email" placeholder="Your email.">
+
+            <!-- <label for="subject">Subject</label> -->
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+            <button onclick="enquirySubmit()">Submit</button>
+
+          <!-- <form action="asd.php">
+            <ul>
+              <li>Name : <input type="text" name="name"></li>
+              <li>Email : <input type="email" name="email"></li>
+              <li>Phone : <input type="tel" name="phone"></li>
+              <li>Message : <textarea name="message" id="" cols="30" rows="10"></textarea></li>
+              <li><a href="#">Submit</a></li>
+            </ul>
+
+          </form> -->
+        </div>
+      </div>
+    </div>
+
+  <div class="footer-bottom">&copy; i-Tourism.com | Designed by Muzafirath</div>
+
+  </div>
+  <!-- //footer -->
+
+    <script src="Javascript/MosqueMap.js"></script>
 
   </body>
 </html>
