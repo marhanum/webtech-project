@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About us</title>
    <link rel="Stylesheet" href="Styles/AboutUs.styles.css">
+   <title>About us</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
         <li><a href="contact us.html">Contact Us</a></li>
         </ul>
     </div>
-    </div>
+    <div class="cover">
 <h1 id="intro" onmouseover="mouseOver()" onmouseout="mouseOut()"> ABOUT US </h1>
 
 <p>
@@ -41,10 +41,11 @@
     as well as provide increased employment opportunities. <br>
     The growth of tourism would also contribute positively to the country's economic development and quality of life</li>
 </ul>
+</div>
 <h2> Our Team </h2>
 
 <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
-  <img src="image/hanan.jpg" style="width:"200" height="200">
+  <img src="image/hanan.jpg" class="image" style="width:200" height="200">
 <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
 <i> HANNAN BINTI AB RAHMAN <i>
 </p>
@@ -71,64 +72,54 @@ src="https://www.youtube.com/embed/Lfkvqtv0OMI"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 
-  <!-- footer -->
-  <div class="footer">
-    <div class="footer-content container">
+<!-- footer -->
+<div class="footer">
+  <div class="footer-content container">
 
-      <div class="footer-section about about_section">
-        <h1>About Us</h1>
-        <p>We are volunteer team to provide all information related to Halal Tourism such as Muslim friendly accommodations, food/restaurants, mosque location, prayer times, and others.
-           In case you have other useful information to assist the Muslim or anyone that keen to have Halal travelling.</p>
-        <a href="About us.html">Read More</a>
-      </div>
-
-      <div class="footer-section links about_section">
-        <h1>Quick Links</h1>
-        <ul>
-          <li><a href="About us.html">About Us</a></li>
-          <li><a href="travel dua.html">Travel Dua</a></li>
-          <li><a href="islamic-attraction.html">Islamic Attraction</a></li>
-          <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accommodation</a></li>
-          <li><a href="halal-restaurant.html">Halal Restaurant</a></li>
-          <li><a href="Prayer.html">24/7 Prayer</a></li>
-          <li><a href="contact us">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-section contact-form about_section">
-        <h1>Enquiry</h1>
-        <div>
-
-
-            <!-- <label for="fname">Name</label> -->
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-            <!-- <label for="email">Email</label> -->
-            <input type="email" id="email" name="email" placeholder="Your email.">
-
-            <!-- <label for="subject">Subject</label> -->
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-
-            <button onclick="enquirySubmit()">Submit</button>
-
-          <!-- <form action="asd.php">
-            <ul>
-              <li>Name : <input type="text" name="name"></li>
-              <li>Email : <input type="email" name="email"></li>
-              <li>Phone : <input type="tel" name="phone"></li>
-              <li>Message : <textarea name="message" id="" cols="30" rows="10"></textarea></li>
-              <li><a href="#">Submit</a></li>
-            </ul>
-          </form> -->
-        </div>
-      </div>
+    <div class="footer-section about about_section">
+      <H1>About Us</H1>
+      <p>We are volunteer team to provide all information related to Halal Tourism such as Muslim friendly accommodations, food/restaurants, mosque location, prayer times, and others. In case you have other useful information to assist the Muslim or anyone that keen to have Halal travelling, please do not hesitate to call us at:..</p>
+      <a href="About us.html">Read More</a>
     </div>
 
-  <div class="footer-bottom">&copy; i-Tourism.com | Designed by Muzafirath</div>
+    <div class="footer-section links about_section">
+      <h1>Quick Links</h1>
+      <ul>
+        <li><a href="About us.html">About Us</a></li>
+        <li><a href="travel dua.html">Travel Dua</a></li>
+        <li><a href="islamic-attraction.html">Islamic Attraction</a></li>
+        <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accommodation</a></li>
+        <li><a href="contact us">Contact Us</a></li>
+      </ul>
+    </div>
 
+    <div class="footer-section contact-form about_section">
+      <h1>Enquiry</h1>
+      <div>
+
+
+          <!-- <label for="fname">Name</label> -->
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <!-- <label for="email">Email</label> -->
+          <input type="email" id="email" name="email" placeholder="Your email.">
+
+          <!-- <label for="subject">Subject</label> -->
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+          <!-- <button onclick="enquirySubmit()">Submit</button> -->
+          <input type="submit" value="Submit" onclick="enquirySubmit()">
+
+      </div>
+    </div>
   </div>
-  <!-- //footer -->
-    
+
+  <div class="footer-bottom">
+<span class="footer-bottom-text">&copy; i-Tourism.com | Designed by Muzafirath </span>
+  </div>
+</div>
+<!-- //footer -->
+
 <script>
   function bigImg(x) {
     x.style.height = "200px";
@@ -148,6 +139,43 @@ function mouseOver() {
 function mouseOut() {
   document.getElementById("intro").style.color = "yellow";
 }
+//form validation
+function enquirySubmit()
+{
+// alert("clicked");
+var name = document.getElementById("fname").value;
+var email = document.getElementById("email").value;
+var subject = document.getElementById("subject").value;
+if(name)
+{
+  if(email)
+    {
+      if(validateemail(email))
+        alert("Your Name : "+name +"\n Your Email : "+email);
+    }
+    else{
+      alert("Please Enter Email");
+    }
+}
+else{
+  alert("Please Enter Name");
+}
+}
+
+function validateemail(email)
+{
+var x=email;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+alert("Please enter a valid e-mail address");
+return false;
+}
+else
+  return true;
+}
+
 </script>
+
 </body>
 </html>
