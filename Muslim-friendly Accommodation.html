@@ -17,50 +17,63 @@
         <li><a href="contact us.html">Contact Us</a></li>
         </ul>
     </div>
-  <h1 align="center"> DISCOVER MUSLIM-FRIENDLY ACCOMMODATION</h1>
-  <h4> Where is your next destination?<br>
+    <h1 id="intro" onmouseover="mouseOver()" onmouseout="mouseOut()"align="center"> DISCOVER MUSLIM-FRIENDLY ACCOMMODATION</h1>
+  <h4 id="content" onmouseover="mouseOver()" onmouseout="mouseOut()"align="center"> Where is your next destination?<br>
    Find exclusive member rewards in every corner of the world!</h4>
   <div class="topnav">
     <a href="Country.html">Country</a>
     <a href="Types Accommodation.html">Types of accommodation</a>
     <div class="search-container">
       <form action="/action_page.php">
+        <a>Date</a>
+        <input type="date" placeholder=id="check-in">
         <input type="text" placeholder="Search.." name="search">
       </form>
     </div><br><br><br><br>
     <!-- Photo Grid -->
     <div class="row">
       <div class="column">
-        <img src="images/image/klcc.jpg"style="width:100%" alt="Malaysia">
+        <img src="image/klcc.jpg"style="width:100%" alt="Malaysia">
         <div class="desc">Malaysia</div>
-        <img src="images/image/turkey.jpg" style="width:100%" alt="Turkey">
+        <img src="image/turkey.jpg" style="width:100%" alt="Turkey">
         <div class="desc">Turkey</div>
-        <img src="images/image/brunei.jpg" style="width:100%" alt="Brunei">
+        <img src="image/brunei.jpg" style="width:100%" alt="Brunei">
         <div class="desc">Brunei</div>
       </div>
       <div class="column">
-        <img src="images/image/island.jpg" style="width:100%">
+        <img src="image/island.jpg" style="width:100%">
         <div class="desc">Maldives</div>
-        <img src="images/image/brunei.jpg"style="width:100%">
+        <img src="image/brunei.jpg"style="width:100%">
         <div class="desc">Brunei</div>
-        <img src="images/image/blue.jpg" style="width:100%">
+        <img src="image/blue.jpg" style="width:100%">
         <div class="desc">Thailand</div>
       </div>
       <div class="column">
-        <img src="images/image/Egypt.jpg" style="width:100%">
+        <img src="image/Egypt.jpg" style="width:100%">
         <div class="desc">Egypt</div>
-        <img src="images/image/Egypt.jpg" style="width:100%">
+        <img src="image/Egypt.jpg" style="width:100%">
         <div class="desc">Auckland</div>
-        <img src="images/image/new zealand.jpg" style="width:100%">
+        <img src="image/new zealand.jpg" style="width:100%">
         <div class="desc">New Zealand</div>
     </div>
     <div class="column">
-      <img src="images/image/japan.jpg" style="width:100%">
+      <img src="image/japan.jpg" style="width:100%">
       <div class="desc">Japan</div>
-      <img src="images/image/indonesia.jpg" style="width:100%">
+      <img src="image/indonesia.jpg" style="width:100%">
       <div class="desc">Indonesia</div>
-      <img src="images/image/australia.jpg" style="width:100%">
+      <img src="image/australia.jpg" style="width:100%">
       <div class="desc">Australia</div>
   </div>
+
+
+<script>
+  function mouseOut() {
+  document.getElementById("intro").style.color = "red";
+  }
+  function mouseOver() {
+    document.getElementById("intro").style.color = "yellow";
+}
+
+  </script>
 </body>
 </html>
