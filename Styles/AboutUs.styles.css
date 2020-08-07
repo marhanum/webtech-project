@@ -2,6 +2,11 @@
 {
   padding: 100;
   margin: 100;
+color: #fff;
+}
+@font-face {
+font-family: "mont";
+src: url("fonts/Montserrat/Montserrat-Thin.ttf");
 }
 .menu-bar
 {
@@ -11,7 +16,7 @@
 }
 .menu-bar ul
 {
-    display: inline-flex;
+  display: inline-flex;
   list-style: none;
   color: #fff;
 }
@@ -23,7 +28,6 @@
   padding: 10px 30px;
   font-family: mont;
   font-weight: lighter;
-  letter-spacing: 0.1cm;
   font-variant: normal;
 }
 .menu-bar ul li a
@@ -36,8 +40,45 @@
   background: rgba(121, 96, 70, 0.3);
   border-radius: 3px;
 }
+H1 {
+  text-align: center;
+}
+H2 {
+  text-aligh: left;
+}
+body
+{
+  font-family: "mont";
+  font-weight: normal;
+  text-align: center;
+  background-color: rgba(122, 162, 196);
+}
+ul {
+  list-style-type: circle;
+}
+img {
+  border-radius: 50%;
+  text-align: center;
+}
+.cover{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgba(0, 0, 0, 0.5);
+}
 
-
+.text {
+  background-color: pink;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.footer
+{
+  float: left;
+  display: block;
+  font-family: "mont";
+}
 .footer{
   background:#303036;
   color:#d3d3d3;
@@ -97,8 +138,6 @@
   padding: 3px 0px;
   font-size: 14px;
 }
-
-/*CONTACT FORM STYLES*/
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -109,20 +148,8 @@ input[type=text], select, textarea {
   margin-bottom: 2px;
   resize: vertical;
   outline: none;
-  font-weight: normal;
 }
-input[type=number] {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  resize: vertical;
-  outline: none;
-  font-weight: normal;
-}
+
 input[type=email] {
   width: 100%;
   padding: 12px;
@@ -133,80 +160,17 @@ input[type=email] {
   margin-bottom: 2px;
   resize: vertical;
   outline: none;
-  font-weight: normal;
 }
 
 input[type=submit] {
-  background-color:rgba(0, 0, 0, 0.4);
+  background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-weight: normal;
 }
 
 input[type=submit]:hover {
-  background-color:rgba(0, 0, 0, 0.7);
-  font-weight: normal;
-}
- #fname ,#place ,#email ,#mobile_number ,#subject{
-  font-weight: normal;
-}
-/*CONTACT US*/
-.contactus{
-  width: 100%;
-  background-image: url("images/mountains.jpg");
-  background-size: cover;
-}
-
-.contactus .container{
-  width: 90%;
-  margin: 0 auto;
-}
-.contact-add-p h1{
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 50px;
-}
-
-.colum-6{
-  width: 50%;
-  float: left;
-}
-
-.contact-add-p{
- padding: 50px 0px;
-}
-
-.contact-add-p h3{
-  font-size: 23px;
-  margin-bottom: 10px;
-}
-.colum-6 {
-  max-width: 800px;
-  height: 600px;
-  background:#fff;
-  opacity: 0.8;
-  margin: 50px auto;
-  box-sizing: border-box;
-  padding: 40px;
-  box-shadow: 0 0 20px rgba(72,98,85, 0.6);
-}
-  text-align: center;
-  background-color: lightblue;
-}
-ul {
-  list-style-type: circle;
-}
-img {
-  border-radius: 50%;
-  text-align: center;
-}
-
-.text {
-  background-color: pink;
-  color: black;
-  font-size: 16px;
-  padding: 16px 32px;
+  background-color: #45a049;
 }
