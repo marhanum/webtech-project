@@ -7,6 +7,10 @@ font-family: "mont";
 src: url("Montserrat/Montserrat-Thin.ttf");
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .column {
   background-color: rgba(0, 0, 0, 0.8);
   float: left;
