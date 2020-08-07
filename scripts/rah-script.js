@@ -16,25 +16,21 @@ function getSourceMasjidJamek() {
 function getSourceIAMM() {
   alert("The source is http://www.kuala-lumpur.ws/magazine/museum-of-islamic-arts.htm");
 }
-function contactSubmit()
+
+
+function enquirySubmit()
 {
   // alert("clicked");
 
   var name = document.getElementById("fname").value;
   var email = document.getElementById("email").value;
-  var num = document.getElementById("mobile_number").value;
   var subject = document.getElementById("subject").value;
 if(name)
   {
     if(email)
       {
         if(validateemail(email))
-          {
-            if(validateNum(num))
-            {
           alert("Your Name : "+name +"\n Your Email : "+email);
-            }
-          }
       }
       else{
         alert("Please Enter Email");
