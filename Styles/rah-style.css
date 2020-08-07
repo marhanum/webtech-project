@@ -1,7 +1,12 @@
 * {
   box-sizing: border-box;
 }
-
+    body {
+      background-image: url(images/islamic-attraction/background.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
 @font-face {
 font-family: "mont";
 src: url("Montserrat/Montserrat-Thin.ttf");
