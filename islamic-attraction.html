@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/rhm-style.css">
-    <script src="scripts/rah-script.js" charset="utf-8"></script>
     <script async src="https://cse.google.com/cse.js?cx=000888210889775888983:pqb3ch1ewhg"></script>
     <style>
     body {
@@ -96,7 +95,50 @@ In case you have other useful information to assist the Muslim or anyone that ke
    <div class="footer-bottom">
      &copy; i-Tourism.com | Designed by Muzafirath
    </div>
- </div>
+ </div><script>
+ function contactSubmit()
+ {
+   // alert("clicked");
+ 
+   var name = document.getElementById("fname").value;
+   var email = document.getElementById("email").value;
+   var num = document.getElementById("mobile_number").value;
+   var subject = document.getElementById("subject").value;
+ if(name)
+   {
+     if(email)
+       {
+         if(validateemail(email))
+           {
+             if(validateNum(num))
+             {
+           alert("Your Name : "+name +"\n Your Email : "+email);
+             }
+           }
+       }
+       else{
+         alert("Please Enter Email");
+       }
+   }
+   else{
+     alert("Please Enter Name");
+   }
+ }
+ 
+ function validateemail(email)
+ {
+ var x=email;
+ var atposition=x.indexOf("@");
+ var dotposition=x.lastIndexOf(".");
+ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+   alert("Please enter a valid e-mail address");
+   return false;
+   }
+   else
+     return true;
+ }
+
+ </script>
  <!-- //footer -->
   </body>
 </html>
