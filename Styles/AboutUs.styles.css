@@ -6,7 +6,7 @@ color: #fff;
 }
 @font-face {
 font-family: "mont";
-src: url("fonts/Montserrat/Montserrat-Thin.ttf");
+src: url("Montserrat/Montserrat-Thin.ttf");
 }
 .menu-bar
 {
