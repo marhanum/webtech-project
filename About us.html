@@ -20,7 +20,9 @@
         <li><a href="contact us.html">Contact Us</a></li>
         </ul>
     </div>
-<h1> ABOUT US </h1>
+    </div>
+<h1 id="intro" onmouseover="mouseOver()" onmouseout="mouseOut()"> ABOUT US </h1>
+
 <p>
   We are volunteer team to provide all information related to Halal Tourism
   such as Muslim friendly accommodations, food/restaurants, mosque location,
@@ -31,10 +33,63 @@
   <br>
   <a href="https://www.facebook.com/HalalTourismCom/">Facebook:HalalTourism</a>
   <br><br>
+<h2> Our Mission </h2>
+<ul>
+  <li>Promote Muslim-friendly destinations sround the world.</li>
+  <li>Showcase Muslim countries' unique wonders, attractions and cultures.</li>
+  <li>Help develop domestic tourism and promote new investments in the country, <br>
+    as well as provide increased employment opportunities. <br>
+    The growth of tourism would also contribute positively to the country's economic development and quality of life</li>
+</ul>
+<h2> Our Team </h2>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+  <img src="image/hanan.jpg" style="width:"200" height="200">
+<p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+<i> HANNAN BINTI AB RAHMAN <i>
+</p>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+    <img src="image/Hanum.jpg" class="image" style="width:200" height="200">
+  <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+  <i> HEAVENLY ANCHUMUKKIL <i>
+    </p>
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+    <img src="image/Heavenly.jpg" class="image" style="width:200" height="200">
+  <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+  <i> MARHANUM CHE MOHD SALLEH <i>
+    </p>
+
+  <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"
+    <img src="image/Rahmah.jpg" class="image" style="width:200" height="200">
+  <p onmousedown="myFunction(this,'red')" onmouseup="myFunction(this,'green')">
+  <i> RAHMA ATIKA PUTRI <i>
+    </p>
 
 <iframe width="560" height="315"
 src="https://www.youtube.com/embed/Lfkvqtv0OMI"
 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
+
+<script>
+  function bigImg(x) {
+    x.style.height = "200px";
+    x.style.width = "200px";
+  }
+
+  function normalImg(x) {
+    x.style.height = "100px";
+    x.style.width = "100px";
+}
+function myFunction(elmnt, clr) {
+  elmnt.style.color = clr;
+}
+function mouseOver() {
+  document.getElementById("intro").style.color = "red";
+}
+function mouseOut() {
+  document.getElementById("intro").style.color = "yellow";
+}
+</script>
 </body>
 </html>
