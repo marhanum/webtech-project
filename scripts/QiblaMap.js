@@ -96,3 +96,39 @@ var results = L.layerGroup().addTo(myQiblaMap);
   }
 
 window.alert("Instructions:\n1. Use the map to see the distance between your location and the Kaabah.\n2. Use the qibla calculator to calculate the qibla degree from your location.");
+
+function enquirySubmit()
+{
+  // alert("clicked");
+
+  var name = document.getElementById("fname").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+if(name)
+  {
+    if(email)
+      {
+        if(validateemail(email))
+          alert("Your Name : "+name +"\n Your Email : "+email);
+      }
+      else{
+        alert("Please Enter Email");
+      }
+  }
+  else{
+    alert("Please Enter Name");
+  }
+}
+
+function validateemail(email)
+{
+var x=email;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+  }
+  else
+    return true;
+}
