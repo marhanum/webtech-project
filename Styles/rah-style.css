@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  background-color: rgba(0, 0, 0, 0.8);
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+  text-align: center;
+}
+
+.column a {
+  color: rgb(255, 250, 205);
+  text-decoration: none;
+}
+
+.column:hover {
+  background-color: #ddd;
+}
+
+.column a:hover {
+  color: black;
+}
+
+nav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.searchbutton {
+  padding: 14px 16px;
+}
+
+h1, h2, p {
+  font-family: Times New Roman;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-bar {
+  background : rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: -1;
+}
+.menu-bar ul {
+    display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li {
+  width: rgb(255, 0, 0);
+  padding: 10px 30px;
+}
+
+.menu-bar ul li a {
+ text-decoration: none;
+ color: rgb(255, 250, 205);
+}
+
+.active , .menu-bar ul li:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 3px;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 250, 205);
+}
+
+#thumbnail {
+  width: 100%;
+  height: auto%;
+}
+
+#main-thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 250, 205);
+  padding: 20px; /* Some padding */
+}
+
+.side p {
+  text-align: left;
+}
+
+/* Main column */
+.main {
+  flex: 70%; /* Set the width of the main content */
+  padding: 20px; /* Some padding */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 250, 205);
+}
+
+.main p {
+  text-align: justify;
+}
+
+.subside {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+}
+
+.subside a {
+  color: rgb(255, 250, 205);
+  text-decoration: none;
+}
+
+.subside:hover {
+  background-color: #ddd;
+}
+
+.subside a:hover {
+  color: black;
+}
