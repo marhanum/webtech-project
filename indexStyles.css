@@ -1,0 +1,266 @@
+*
+{
+  padding: 100;
+  margin: 0;
+  box-sizing: inherit;
+  /* background:#303036;
+  z-index: 4; */
+}
+html{
+  height: 100%;
+  overflow:hidden;
+}
+@font-face {
+font-family: "mont";
+src: url("fonts/Montserrat/Montserrat-Thin.ttf");
+}
+body
+{
+color:#fff;
+margin: 0;
+padding: 0;
+perspective: 1px;
+transform-style: preserve-3d;
+height: 100%;
+overflow-y: scroll;
+overflow-x: hidden;
+font-family: mont;
+color: #000;
+}
+header{
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 30vw 0 5vw;
+  position:relative;
+  transform-style: inherit;
+  width: 100vw;
+}
+header h1{
+  margin-top:  -350px;
+  font-size: 90px;
+  font-family: mont;
+}
+header p{
+  margin-top:  -100px;
+  font-size: 20px;
+}
+
+header, header:before{
+  background: 50% 50% / cover;
+}
+header::before {
+  bottom: 0;
+  content: "";
+  left: 0;
+position: absolute;
+right: 0;
+top: 0;
+display: block;
+background-image: url(images/madina.jpg) ;
+background-size: cover;
+transform-origin: center center 0;
+transform: translateZ(-1px) scale(2);
+z-index: -1;
+min-height: 100vh;
+}
+header * {
+  font-weight: normal;
+  letter-spacing: 0.2cm;
+  text-align: center;
+  margin: 0;
+  padding: 1em 0;
+}
+
+.menu-bar
+{
+  background : rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: -1;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: rgb(255, 0, 0);
+  margin-top: 25px ;
+  margin-bottom: 25px;
+  padding: 10px 30px;
+  font-family: mont;
+  font-weight: lighter;
+  letter-spacing: 0.1cm;
+  font-variant: normal;
+}
+.menu-bar ul li a
+{
+ text-decoration: none;
+ color: white;
+}
+.active , .menu-bar ul li:hover
+{
+  background: rgba(121, 96, 70, 0.3);
+  border-radius: 3px;
+}
+
+audio{
+  position: relative;
+}
+
+.slider{
+  overflow: hidden;
+}
+.slider figure{
+  position:relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  padding: inherit;
+  animation: 20s slider infinite;
+}
+.slider figure img {
+  float: left;
+  width: 20%
+}
+@keyframes slider {
+  0% {
+    left: 0;
+   }
+  20% {
+    left: 0;
+   }
+  25% {
+    left: -100%;
+   }
+   45%{
+     left: -100%;
+    }
+    50%{
+      left: -200%;
+    }
+    70%{
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95%{
+      left: -300%;
+    }
+    100%{
+      left: -400%;
+    }
+}
+.footer{
+  background:#303036;
+  color:#d3d3d3;
+  height:520px;
+  position: relative;
+}
+
+.footer .footer-bottom{
+  background: #343a40;
+
+  height: 70px;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+
+
+}
+.footer .audio
+{
+  float: left;
+    display: block;
+}
+.footer .footer-bottom-text{
+  float: right;
+  color:#c5c5c5;
+  display: block;
+  text-align: center;
+
+
+}
+
+
+.footer .container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer .about_section{
+  width: 30%;
+  float: left;
+  padding: 75px 20px;
+}
+
+.footer .about_section h1{
+  font-size: 26px;
+  padding-bottom: 20px;
+}
+
+.footer .about_section p{
+  font-size: 16px;
+  text-align: justify;
+  padding-bottom: 25px;
+}
+
+.footer .about_section a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.footer .about_section ul{
+  padding-left: 0px;
+}
+
+.footer .about_section ul li{
+  text-decoration: none;
+  list-style: none;
+  padding: 3px 0px;
+  font-size: 14px;
+}
+
+/*CONTACT FORM STYLES*/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}

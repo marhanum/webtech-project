@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap" rel="stylesheet">
+    <title>Travel Dua</title>
+    <link rel="stylesheet" href="duaStyle.css">
+  </head>
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="About us.html">About Us</a></li>
+        <li class="active"><a href="travel dua.html">Travel Dua</a></li>
+        <li><a href="islamic-attraction.html" >Islamic Attraction</a></li>
+        <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accomadation</a></li>
+        <li><a href="halal-restaurant.html">Halal Restuarant</a></li>
+        <li><a href="Prayer.html">24/7 Prayer</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="dua" id="dua1" style="width:45%">
+      <h3>Dua before Travelling </h3><br>
+      <p>
+    سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ.
+      </p>
+    </div>
+
+
+    <div class="dua" id="dua2" style="width:45%">
+      <h3>Supplication while Travelling</h3><br>
+      <p>
+      للهُ أكبَر ، اللهُ أكبَر ، اللهُ أكبَر، سُـبْحانَ الَّذي سَخَّـرَ لَنا هذا وَما كُنّا لَهُ مُقْـرِنين، وَإِنّا إِلى رَبِّنـا لَمُنْقَـلِبون، اللّهُـمَّ إِنّا نَسْـأَلُكَ في سَفَـرِنا هذا البِـرَّ وَالتَّـقْوى، وَمِنَ الْعَمَـلِ ما تَـرْضى، اللّهُـمَّ هَوِّنْ عَلَـينا سَفَرَنا هذا وَاطْوِ عَنّا بُعْـدَه، اللّهُـمَّ أَنْـتَ الصّـاحِبُ في السَّـفَر، وَالْخَلـيفَةُ في الأهـلِ، اللّهُـمَّ إِنّـي أَعـوذُبِكَ مِنْ وَعْـثاءِ السَّـفَر، وَكَآبَةِ الْمَنْـظَر، وَسوءِ الْمُنْـقَلَبِ في المـالِ وَالأَهْـل
+      </p>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Meaning: Glory unto Him Who created this transportation, for us, though we were unable to create it on our own. And unto our Lord we shall return.</p>
+      </div>
+
+    </div>
+
+    <div id="myModal2" class="modal2">
+
+      <!-- Modal content -->
+      <div class="modal-content2">
+        <span class="close2">&times;</span>
+        <p>Meaning: Allah is the Most Great. Allah is the Most Great. Allah is the Most Great. Glory is to Him Who has provided this for us though we could never have had it by our efforts. Surely, unto our Lord we are returning. O Allah, we ask You on this our journey for goodness and piety, and for works that are pleasing to You. O Allah, lighten this journey for us and make its distance easy for us. O Allah, You are our Companion on the road and the One in Whose care we leave our family. O Allah, I seek refuge in You from this journey's hardships, and from the wicked sights in store and from finding our family and property in misfortune upon returning.</p>
+      </div>
+
+    </div>
+
+    <script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var dua1 = document.getElementById("dua1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+dua1.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+// Get the modal2
+var modal2 = document.getElementById("myModal2");
+
+// Get the button that opens the modal
+var dua2 = document.getElementById("dua2");
+
+// Get the <span> element that closes the modal
+var span2 = document.getElementsByClassName("close2")[0];
+
+// When the user clicks the button, open the modal
+dua2.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span2.onclick = function() {
+  modal2.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+</script>
+
+  </body>
+</html>

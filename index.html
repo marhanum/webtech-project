@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-Tourism</title>
+  <link rel="stylesheet" href="indexStyles.css">
+</head>
+
+<body>
+  <div class="menu-bar">
+    <ul>
+      <li class="active"><a href="index.html"> Home</a></li>
+      <li><a href="About us.html">About Us</a></li>
+      <li><a href="travel dua.html">Travel Dua</a></li>
+      <li><a href="islamic-attraction.html">Islamic Attraction</a></li>
+      <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accommodation</a></li>
+      <li><a href="halal-restaurant.html">Halal Restuarant</a></li>
+      <li><a href="Prayer.html">24/7 Prayer</a></li>
+      <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="overlay">
+    <header>
+      <h1>Welcome To I-Tourism</h1>
+      <p>A complete guide for Islamic Tourism</p>
+    </header>
+
+    <div class="slider">
+      <figure>
+        <img src="images/images/slide1.png" alt="slide1">
+        <img src="images/images/slide2.png" alt="slide2">
+        <img src="images/images/slide3.png" alt="slide3">
+        <img src="images/images/slide4.png" alt="slide4">
+        <img src="images/images/slide.png" alt="slide5">
+      </figure>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="footer-content container">
+
+      <div class="footer-section about about_section">
+        <H1>About Us</H1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae, reiciendis dolores, a fugit facilis
+          saepe voluptatem repudiandae nobis error tenetur molestias itaque cupiditate quaerat quibusdam quia, molestiae
+          iste quos.</p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="footer-section links about_section">
+        <h1>Quick Links</h1>
+        <ul>
+          <li><a href="About us.html">About Us</a></li>
+          <li><a href="travel dua.html">Travel Dua</a></li>
+          <li><a href="islamic-attraction.html">Islamic Attraction</a></li>
+          <li><a href="Muslim-friendly Accommodation.html">Muslim Friendly Accommodation</a></li>
+          <li><a href="contact us">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section contact-form about_section">
+        <h1>Enquiry</h1>
+        <div>
+
+
+            <!-- <label for="fname">Name</label> -->
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <!-- <label for="email">Email</label> -->
+            <input type="email" id="email" name="email" placeholder="Your email.">
+
+            <!-- <label for="subject">Subject</label> -->
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+
+            <!-- <button onclick="enquirySubmit()">Submit</button> -->
+            <input type="submit" value="Submit" onclick="enquirySubmit()">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+<audio src="images/bgm1.mp3" controls autoplay loop class="audio"></audio>
+
+<span class="footer-bottom-text">      &copy; i-Tourism.com | Designed by Muzafirath </span>
+    </div>
+  </div>
+  <!-- //footer -->
+
+  <script>
+function enquirySubmit()
+{
+  // alert("clicked");
+  var name = document.getElementById("fname").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+if(name)
+  {
+    if(email)
+      {
+        if(validateemail(email))
+          alert("Your Name : "+name +"\n Your Email : "+email);
+      }
+      else{
+        alert("Please Enter Email");
+      }
+  }
+  else{
+    alert("Please Enter Name");
+  }
+}
+
+function validateemail(email)
+{
+var x=email;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+  }
+  else
+    return true;
+}
+  </script>
+</body>
+
+</html>

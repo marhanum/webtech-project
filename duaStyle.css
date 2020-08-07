@@ -1,0 +1,113 @@
+*
+{
+  padding: 100;
+  margin: 0;
+  box-sizing: inherit;
+}
+@font-face {
+font-family: "mont";
+src: url("fonts/Montserrat/Montserrat-Thin.ttf");
+}
+body{
+  background-image: url(images/dhikr.jpg) ;
+  background-size: cover;
+}
+.menu-bar
+{
+  background : rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: -1;
+}
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+.menu-bar ul li
+{
+  width: rgb(255, 0, 0);
+  margin-top: 25px ;
+  margin-bottom: 25px;
+  padding: 10px 30px;
+  font-family: mont;
+  font-weight: lighter;
+  letter-spacing: 0.1cm;
+  font-variant: normal;
+}
+.menu-bar ul li a
+{
+ text-decoration: none;
+ color: white;
+}
+.active , .menu-bar ul li:hover
+{
+  background: rgba(121, 96, 70, 0.3);
+  border-radius: 3px;
+}
+
+.dua{
+  color: white;
+  background : rgba(0, 0, 0, 0.8);
+  font-family: mont;
+  font-weight: lighter;
+  padding: 10px 10px 10px 10px;
+    margin: 20px 20px 20px 20px;
+  width: 45%;
+  cursor: pointer;
+}
+ #dua1 {
+  float: left;
+  width: 50%;
+}
+ #dua2{
+  float: right;
+  width: 45%;
+  padding-top: 30px;
+}
+.dua p{
+    font-size: 25px;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* The Modal (background) */
+.modal , .modal2{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  padding-top: 500px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background: rgba(121, 96, 70, 0.3); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content , .modal-content2{
+  background-color:rgba(121, 96, 70, 0.8);
+  margin: auto;
+  padding: 20px;
+  border: 1px #888;
+  width: 80%;
+  font-family: mont;
+  color: #fff;
+}
+
+/* The Close Button */
+.close , .close2{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus ,.close2:hover,
+.close2:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
