@@ -49,3 +49,39 @@ var results = L.layerGroup().addTo(myMosqueMap);
   });
 
 window.alert("Instructions:\n1. Search for your desired location using the map.\n2. Zoom in the circle to see the mosques within 1km from your set location.\n\nMoon&star = Mosque.");
+
+function enquirySubmit()
+{
+  // alert("clicked");
+
+  var name = document.getElementById("fname").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+if(name)
+  {
+    if(email)
+      {
+        if(validateemail(email))
+          alert("Your Name : "+name +"\n Your Email : "+email);
+      }
+      else{
+        alert("Please Enter Email");
+      }
+  }
+  else{
+    alert("Please Enter Name");
+  }
+}
+
+function validateemail(email)
+{
+var x=email;
+var atposition=x.indexOf("@");
+var dotposition=x.lastIndexOf(".");
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
+  alert("Please enter a valid e-mail address");
+  return false;
+  }
+  else
+    return true;
+}
